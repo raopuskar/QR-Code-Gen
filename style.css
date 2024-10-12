@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #bbc6fa;
+}
+.box {
+    background: white;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 1px 10px 20px 0 rgba(0, 0, 0, 0.15);
+}
+.box input {
+    height: 40px;
+    width: 100%;
+    border: 2px solid rgb(202, 193, 193);
+    padding: 5px;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+#qr-box {      /*Here we will not display the box by making the height 0*/
+    width: 200px;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+#qr-box img {
+    width: 100%;
+    padding: 10px;
+}
+#qr-box.show-img {    /*Once the function is called show img the QR-Code will display*/
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid #d1d1d1;
+}
+.box button {
+    height: 40px;
+    width: 100%;
+    margin-top: 20px;
+    background-color: red;
+    border: 0;
+    border-radius: 5px;
+    color: wheat;
+    cursor: pointer;
+}
